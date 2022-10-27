@@ -1,4 +1,8 @@
 public class IlExisteUneLigneAvecPlusieursZeros{
+    /**
+     * Donnée : Une matrice d' entiers
+     * Résultat : retourne vrai si il existe une ligne avec plus de 0
+     */
     public static boolean ilExisteUneLigneAvecPlusieursZeros(int[][] M){
         boolean b=false;
         for (int i = 0; i < M.length; i++) {

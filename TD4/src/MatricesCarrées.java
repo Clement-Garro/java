@@ -1,15 +1,22 @@
 import java.util.Scanner;
-public class MatricesCarrées {
+public class MatricesEnRangée {
+    /**
+     * Donnée : un tableau d' entiers carré de n rangées et n colonnes
+     * Résultat : retourne la matrice transposée de T
+     */
     public static void main(String[] args) {
         Matrice.afficherGrandTableau(matriceCarréesRangée());
         Ut.afficherSL("---------------------------");
         Matrice.afficherGrandTableau(matriceCarréesSerpentin());
         Ut.afficherSL("---------------------------");
-        Matrice.afficherGrandTableau(matriceCarréesDiagonale());
+        /*Matrice.afficherGrandTableau(matriceCarréesDiagonale());
         Ut.afficherSL("---------------------------");
-        Matrice.afficherGrandTableau(matriceCarréesSpirale());
+        Matrice.afficherGrandTableau(matriceCarréesSpirale());*/
     }
-
+    /**
+     * Donnée : un tableau d' entiers carré de n rangées et n colonnes
+     * Résultat : retourne la matrice transposée de T
+     */
     public static int[][] matriceCarréesRangée() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -23,7 +30,10 @@ public class MatricesCarrées {
         }
         return matrice;
     }
-
+    /**
+     * Donnée : un tableau d' entiers carré de n rangées et n colonnes
+     * Résultat : retourne la matrice transposée de T
+     */
     public static int[][] matriceCarréesSerpentin() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -39,7 +49,10 @@ public class MatricesCarrées {
         }
         return matrice;
     }
-
+    /**
+     * Donnée : un tableau d' entiers carré de n rangées et n colonnes
+     * Résultat : retourne la matrice transposée de T
+     *
     public static int[][] matriceCarréesDiagonale() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -54,7 +67,9 @@ public class MatricesCarrées {
         }
         return matrice;
     }
-
+    /**
+     * Donnée : un tableau d' entiers carré de n rangées et n colonnes
+     * Résultat : retourne la matrice transposée de T
     public static int[][] matriceCarréesSpirale() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -69,4 +84,5 @@ public class MatricesCarrées {
         }
         return matrice;
     }
+     */
 }

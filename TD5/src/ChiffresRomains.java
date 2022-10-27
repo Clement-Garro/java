@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class ChiffresRomains {
+    /**
+     * Donnée : Un entier n > 0 et < 3999
+     * Résultat : affiche n en chiffres romains
+     */
     public static void chiffreUnites(int nb) {
         switch(nb){
             case 0 -> System.out.print("");

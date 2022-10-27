@@ -1,5 +1,9 @@
-public class Sontégales {
-    public static boolean SontEgales(int[][] P, int[][] Q) {
+public class SontÉgales {
+    /**
+     * Donnée : deux matrices d' entiers P et Q de même dimensions
+     * Résultat : retourne true si P et Q sont égales, false sinon
+     */
+    public static boolean sontÉgales(int[][] P, int[][] Q) {
         if (P.length != Q.length || P[0].length != Q[0].length) {
             return false;
         }
