@@ -4,17 +4,22 @@ public class IlExisteUneLigneAvecPlusieursZeros{
      * Résultat : retourne vrai si il existe une ligne avec plus de 0
      */
     public static boolean ilExisteUneLigneAvecPlusieursZeros(int[][] M){
-        boolean b=false;
-        for (int i = 0; i < M.length; i++) {
-            int zero = 0;
-            for (int j = 0; j < M[i].length; j++) {
+        int a = 0;
+        boolean b = true;
+        int i = 0;
+        while (i < M.length && b) {
+            int j = 0;
+            while (j < M[0].length && b) {
                 if (M[i][j] == 0) {
-                    zero++;
+                    a++;
                 }
+                j++;
             }
-            if (zero > 1) {
-                b=true;
+            if (a > 1) {
+                b = false;
             }
+            a = 0;
+            i++;
         }
         return b;
     }

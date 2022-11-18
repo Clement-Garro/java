@@ -9,8 +9,8 @@ public class Procédure {
         int n = scanner.nextInt();
         Mutiplication.multiplication(n);
         Ut.afficherSL("---------------------------");
-        ChiffresRomains.chiffreRomains();
-        Ut.afficherSL("---------------------------");
+        //NumérationRomaine.afficher();
+        Ut.afficherSL("---------------- -----------");
         CarréParfait.racineParfaite();
     }
 }

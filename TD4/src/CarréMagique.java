@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CarréMagique {
         /**
          * Donnée : un tableau carré de n * n entiers ( n impair)
@@ -6,6 +8,11 @@ public class CarréMagique {
          * entiers de chacune des deux diagonales
          */
         public static void remplirEnCarréMagique(int[][] M){
+            for(int i = 0; i < M.length; i++) {
+                for( int j = 0; j < M[0].length; j++){
+                    M[i][j] = 0;
+                }
+            }
             int n = M.length;
             int i = 0;
             int j = n/2;
@@ -28,6 +35,7 @@ public class CarréMagique {
                 }
             }
         }
+
     /**
      * Donnée: un carré magique CM
      * Résultat: complete le carré magique CM en le remplissant avec les nombres
