@@ -72,16 +72,9 @@ public class Fraction {
 
     /* A COMPLETER A PARTIR D'ICI !! */
     public void reduire() {
-        int a = this.numerateur;
-        int b = this.denominateur;
-        int r = 0;
-        while (b != 0) {
-            r = a % b;
-            a = b;
-            b = r;
-        }
-        this.numerateur = this.numerateur / a;
-        this.denominateur = this.denominateur / a;
+        int pgcd = Ut.pgcd(this.numerateur, this.denominateur);
+        this.numerateur /= pgcd;
+        this.denominateur /= pgcd;
     }
 
     public Fraction fractionReduite () {
